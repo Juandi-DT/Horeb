@@ -1,0 +1,31 @@
+.addPage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3pc;
+}
+
+.addPage hr {
+    width: 70%;
+    border: 1px solid var(--blue-dark);
+    border-radius: 10px;
+}
+
+.addSection {
+    display: flex;
+    align-items: center;
+    gap: 2pc;
+    flex-direction: column;
+}
+
+.btnSection {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 13px;
+}

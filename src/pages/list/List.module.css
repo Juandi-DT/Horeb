@@ -1,0 +1,41 @@
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1pc;
+    height: auto;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 430px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.cl1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1pc;
+    height: auto;
+    overflow: auto;
+    grid-template-columns: 1fr;
+}

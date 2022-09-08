@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Kalam:400,700|Itim:400);
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: rgba(61, 61, 61, 1);
+    --background: #EBF3FF;
+    --blue-dark: #24285B;
+    --blue-light: #68E1FD;
+    --personas: rgba(231, 189, 252, 1);
+    --coches: rgba(252, 193, 189, 1);
+    --f-f-itim: "Itim", cursive;
+    --f-f-kalam: "Kalam", cursive;
+}
+
+* {
+    font-family: var(--f-f-kalam);
+    font-size: 16px;
+    letter-spacing: 0;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-family: var(--f-f-kalam);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.gray {
+    color: var(--gray)
+}
+
+.black {
+    color: var(--black);
+}
+
+.blue {
+    color: var(--blue-dark);
+}
+
+.blue-light {
+    color: var(--blue-light);
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}

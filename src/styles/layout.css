@@ -1,0 +1,133 @@
+.background {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    background: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    max-width: 400px;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 2pc;
+}
+
+.content header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.content header h1 {
+    font-family: var(--f-f-itim);
+
+}
+
+.content .main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.dark-close {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55%;
+    height: max-content;
+    background: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.center {
+    display: flex;
+    padding: 3pc 0;
+    gap: 1.5pc;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5pc;
+    justify-content: flex-start;
+    margin: 2.5pc 0;
+}
+
+.form-group label {
+    width: 100%;
+    gap: 8px;
+}
+
+.form-group span {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 8px;
+
+}
+
+.form-group input,
+.form-group select {
+    border-radius: 5px;
+    border: none;
+    background: #ffdfd2;
+    width: 8pc;
+    /* height: 20px; */
+    height: auto;
+    color: var(--gray);
+    padding: 5px;
+}

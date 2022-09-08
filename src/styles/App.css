@@ -1,0 +1,130 @@
+.Button {
+    border-radius: 15px;
+    max-height: 14px;
+    padding: 6px;
+    width: 8pc;
+    max-width: 75%;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+
+.b-personas {
+    background: var(--personas);
+}
+
+.b-coches {
+    background: var(--coches);
+}
+
+.persona-card,
+.coche-card {
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
+    background: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.persona-card {
+    color: var(--personas);
+    height: 100px;
+}
+
+.persona-card *::first-letter {
+    text-transform: capitalize;
+}
+
+.coche-card {
+    color: var(--coches);
+    height: 200px;
+    gap: 1.2pc;
+    justify-content: flex-start;
+    padding-top: 1.6pc;
+    overflow: auto;
+}
+
+.coche-card .name-coche {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.coche-card .add-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.coche-card .add-icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.choosen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.348);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+/* loading */
+
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000a8;
+}
+
+.loading:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid var(--coches);
+    border-color: var(--coches) transparent #91e6f2 transparent;
+    animation: loading 1.2s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
