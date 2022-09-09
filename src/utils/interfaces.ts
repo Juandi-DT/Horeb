@@ -11,7 +11,7 @@ export interface IconProps {
 export interface Data {
   personas: {
     name: string;
-    coche?: number;
+    coche: number;
   }[];
   coches: { name: string }[];
 }

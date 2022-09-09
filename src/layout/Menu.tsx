@@ -124,15 +124,18 @@ const PersonaForm: FC<Forms> = ({ close }) => {
         <select
           value={formData?.coche}
           onChange={e =>
-            setFormData((prev: any) => ({ ...prev, coche: e.target.value }))
+            setFormData((prev: any) => ({
+              ...prev,
+              coche: parseInt(e.target.value),
+            }))
           }
         >
           <option value={0}>Ningun coche</option>
 
           {data.coches.map(({ name }, idx) => {
-            const numberToPeople = data.personas.filter(
-              persona => persona?.coche === idx + 1 && persona
-            );
+            const numberToPeople = data.personas.filter(persona => {
+              if (persona?.coche === idx + 1) return persona;
+            });
             return (
               <option value={idx + 1} key={idx}>
                 {name} ({numberToPeople.length})
